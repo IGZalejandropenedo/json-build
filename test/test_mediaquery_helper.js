@@ -1,7 +1,7 @@
 var assert = require('assert');
 
 describe('Mediaquery Helper', function () {
-	var mediaQuery = require('../src/json-build');
+	var mediaQuery = require('../index');
 
 	it('Should return a json with a single field', function (done) {
 		var expected = {
