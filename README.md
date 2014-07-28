@@ -18,7 +18,8 @@ var entity = new json-build();
 entity.addValue('first.second', 'value')
       .addValue('first.third.fourth', 'value').
       .pushValue('first.fifth', 1)
-      .pushValue('first.fifth', 2);
+      .pushValue('first.fifth', 2)
+      .build();
 
 ```
 
