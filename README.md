@@ -25,12 +25,12 @@ entity.addValue('first.second', 'value')
 The result will be
 ```json
 {
-  first: {
-    second: 'value',
-    third: {
-      fourth: 'value'
+  "first": {
+    "second": "value",
+    "third": {
+      "fourth": "value"
     },
-    fifth: [1, 2]
+    "fifth": [1, 2]
   }
 }
 ```
