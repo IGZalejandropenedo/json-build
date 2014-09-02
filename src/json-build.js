@@ -1,5 +1,5 @@
-module.exports = function () {
-	var entity = {};
+module.exports = function (initialEntity) {
+	var entity = initialEntity || {};
 
 	var addField = function (to, fields, value) {
 		var field = fields.shift();

@@ -35,3 +35,5 @@ The result will be
   }
 }
 ```
+
+In addition, an object can be passed as argument to the constructor to be used as base object to build upon.
