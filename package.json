@@ -2,7 +2,7 @@
   "name": "json-build",
   "description": "Small library to create JSON objects from expresions",
   "author": "Alejandro Penedo Ramos <icedfiend@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/IGZalejandropenedo/json-build"
@@ -11,7 +11,9 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -R spec ./test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "extend": "^2.0.0"
+  },
   "devDependencies": {
     "mocha": "~1.20.1"
   },

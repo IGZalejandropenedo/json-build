@@ -1,3 +1,5 @@
+var extend = require('extend');
+
 module.exports = function (initialEntity) {
 	var entity = initialEntity || {};
 
@@ -52,6 +54,25 @@ module.exports = function (initialEntity) {
 		pushField(entity, parts, value);
 
 		return this;
+	};
+
+	this.get = function(field) {
+		var item = extend(true, {}, entity);
+		var parts = field.split('.');
+
+		while (parts.length > 0) {
+			var part = parts.shift();
+
+			if(!item[part]){
+				return undefined;
+			}
+
+			item = item[part];
+			if(parts.length === 0) {
+				return item;
+			}
+		}
+		return undefined;
 	};
 
 	this.build = function () {
